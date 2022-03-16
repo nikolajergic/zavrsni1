@@ -1,3 +1,16 @@
+* {
+  font-size: 14px;
+}
+
+.blog-masthead {
+  background-color: #b34848 !important;
+}
+
+.blog-post-title:hover {
+  color: #b34848;
+  text-decoration: underline;
+}
+
 h1,
 .h1,
 h2,
@@ -10,20 +23,19 @@ h5,
 .h5,
 h6,
 .h6 {
+  color: #b34848 !important;
+}
+
+.undr2:hover {
+  text-decoration: underline;
   color: #b34848;
 }
-* {
-  font-size: 14px;
-}
 
-.blog-post-title {
+.undr3:hover {
+  text-decoration: underline;
   color: #b34848;
 }
 
-.blog-post-title:hover {
-  text-decoration-line: underline;
-}
-
-.blog-masthead {
-  background-color: #b34848;
+a {
+  text-decoration: none;
 }
