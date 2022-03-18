@@ -2,12 +2,13 @@
 <?php
     $sql = "SELECT * FROM posts ORDER BY created_at DESC" ;
     $posts = getDataFromServer($sql, $connection, true);
+    
 ?>
 
 <div class="col-sm-8 blog-main">
     <?php foreach ($posts as $post) { ?>
         <div class="blog-post">
-            <a href="" class="blog-post-title">
+            <a href="single-post.php?id=<?php echo $post['id']?>" class="blog-post-title">
                 <h2><?php echo $post['title'] ?></h2>
             </a>
             <p class="blog-post-meta"><?php echo date_format(date_create($post['created_at']), 'd-F-Y') ?> by <a href="#"><?php echo $post['author'] ?></a></p>
